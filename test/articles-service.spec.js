@@ -36,8 +36,9 @@ describe(`Articles service object`, function() {
         return db
             .into('blogful_articles')
             .insert(testArticles)
+            .then(result => console.log(result));
         })
-
+a
     after(() => db.destroy())
 
 
